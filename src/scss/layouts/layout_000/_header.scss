@@ -1,0 +1,48 @@
+.header-box{
+    @include e(title){
+        background: url(#{$iPath}sprite.png) no-repeat 0 -388px;
+        width: 171px;
+        height: 64px;
+        margin: 0 auto;
+    }
+    @include e(content){
+        @include invis();
+    }
+}
+.form-box{
+    position: relative;
+    width: 200px;
+    align-self: center;
+    margin: 0 0 30px 50px;
+    padding-top: 5px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 41px;
+        width: 41px;
+        background: url(#{$iPath}sprite.png) no-repeat 0 -347px;
+    } 
+    @include e(form){
+        width: 100%;
+        margin: auto;
+        
+    }
+    @include e(control){
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        background: $Grey;
+        border: 2px solid $white;
+        color: $white;
+    }
+}
+.slogan{
+    margin: 20px 20px;
+    font-size: 24px;
+    color: $Grey;
+    font-weight: $mediumFontWeight;
+    text-shadow: 1px 1px $white, -1px 1px $white, 1px -1px $white, -1px -1px $white  ;
+
+}

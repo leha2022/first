@@ -1,0 +1,8 @@
+.header-box{
+    display: flex;
+    flex-wrap: wrap;
+    @include e(title){
+        margin: 0 50px 0 -10px;
+    }
+}
+  

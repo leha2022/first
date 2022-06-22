@@ -1,0 +1,40 @@
+.nav-box{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    @include e(item){
+        margin: 10px 50px;
+        position: relative;
+       @include before('sprite.png', 30px, 34px){
+        left: -40px;
+        top: -6px;
+       }
+       @include m(photo){
+        &::before{
+            width: 35px;
+            height: 35px;
+            background-position: 0 -35px;
+        }
+    }
+        @include m(contact){
+            &::before{
+                width: 35px;
+                height: 30px;
+                background-position: 0 -71px;
+            }
+        }
+    }
+    @include e(link){
+        color: $black;
+        font-weight: $mediumFontWeight;
+        font-size: rem(17px);
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+
+       }
+}

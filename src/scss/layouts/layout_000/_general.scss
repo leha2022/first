@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-family: $baseFontFamily;
+  font-size: 1rem;
+  background: url(#{$iPath}bg.jpg) repeat-x;
+  margin: 0;
+}
+input{
+  border: 1px solid $navMenu;
+}
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $mobilePadding;
+}
+.content-box{
+  flex: 1;
+}
+.fluid-box-img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+

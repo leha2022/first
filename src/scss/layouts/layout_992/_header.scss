@@ -1,0 +1,26 @@
+
+.slogan{
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        height: 60px;
+        width: 2px;
+        background: $white;
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+}
+.form-box{
+    @include e(control){
+        &:focus{
+            background: $white;
+            color: $Grey;
+        }
+        }
+      
+       
+}

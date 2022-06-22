@@ -1,0 +1,22 @@
+.post{
+    background: $Welcome;
+    border: 2px solid $white;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+
+    @include e(number){
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 38px;
+        width: 43px;
+        background: url(#{$iPath}sprite.png) no-repeat 0 -208px;
+        font-size: 22px;
+        text-align: center;
+        font-weight: $mediumFontWeight;
+    }
+}

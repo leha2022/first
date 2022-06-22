@@ -1,0 +1,13 @@
+
+.nav-box{
+    margin: 0;
+    @include e(item){
+        margin-right: 20px;
+        padding: 0;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+    
+}
